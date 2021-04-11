@@ -54,7 +54,7 @@ separation of concerns.
 #### The REST API
 
 ##### The Resource Controller
-I chose to use a single controller for all resources and http methods since all requests 
+I chose to use a single controller for all resources and HTTP methods since all requests 
 follow an identical pattern, only the resource changes.
 The controller does not perform any business logic and merely routes the traffic according to 
 resource/method pairs. Action is delegated to the service layer.
@@ -73,7 +73,7 @@ The ResourceService uses the information provided by the Resource enum to make t
 RestTemplate. The Resource enum provides the URL and the class the returned object will be mapped to.
 The injected RestTemplate is configured with a custom ResponseErrorHandler that will intercept any error 
 returned by the rest template and, in turn, throw an application-specific exception according to the 
-http response. This allows us to return the appropriate ResponseEntity based on a short list of 
+HTTP response. This allows us to return the appropriate ResponseEntity based on a short list of 
 exceptions.
 
 #### Data Storage
