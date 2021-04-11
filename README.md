@@ -13,7 +13,7 @@ This will start the application on port `8080`.
 If you wish to disable the scheduler, set its `enabled` property to false in application.properties.
 
 ### Unit Tests
-Run all tests:
+To run all tests:
 ````shell script
 mvn test
 ````
