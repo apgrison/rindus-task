@@ -128,7 +128,7 @@ Although querying the JSON (or XML) data directly using JSONPath (or XPath) is a
 and more complex than running SQL queries. Also, if the query results need to be cached anyway, then we might as well 
 leverage the flexibility of a relational database.
 
-As a conclusion, I would say that if we were to improve data storage system, the infrastructure would depend on the 
+As a conclusion, I would say that if we were to improve the data storage system, the infrastructure would depend on the 
 application's functionality. If we were to offer filtering, sorting and pagination we would probably be better off using 
 a database in conjunction with an in-memory store serving as a cache. That way we address the performance issues caused by 
 extracting result sets from a query. If, on the other hand, the application were to remain a simple wrapper of the JSON 
